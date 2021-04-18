@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="Spinner1" type="id" />
+    <item name="Spinner2" type="id" />
+    <item name="Spinner3" type="id" />
+    <item name="convertBtn" type="id" />
+    <item name="firstInputEditText" type="id" />
+    <item name="convertedTextView" type="id" />
+    <item name="toUnitSpinner" type="id" />
+    <item name="fromUnitSpinner" type="id" />
+    <item name="inputEditText" type="id" />
+    <item name="outputTextView" type="id" />
+    <item name="Spinner" type="id" />
+</resources>
