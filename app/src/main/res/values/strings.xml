@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">QuantityMeasurement</string>
+    <string name="button">Button</string>
+
+    <string-array name="Conversion">
+        <item>Conversion Type</item>
+        <item>Length</item>
+        <item>Volume</item>
+        <item>Weight</item>
+        <item>Temperature</item>
+    </string-array>
+    <string-array name="WeightUnits">
+        <item>Gram</item>
+        <item>Kilogram</item>
+        <item>Ton</item>
+    </string-array>
+
+    <string-array name="LengthUnits">
+        <item>Kilometer</item>
+        <item>Meter</item>
+        <item>Inch</item>
+        <item>Feet</item>
+    </string-array>
+
+    <string-array name="VolumeUnits">
+        <item>Liter</item>
+        <item>Milliliter </item>
+    </string-array>
+
+    <string-array name="TemperatureUnits">
+        <item>Celsius</item>
+        <item>Fahrenheit </item>
+    </string-array>
+    <string name="appwidget_text">Quantity Measurement</string>
+    <string name="configure">Configure</string>
+    <string name="add_widget">Add widget</string>
+    <string name="error_message" />
+    <string name="unit_converter">Unit Converter</string>
+    <string name="quantity_type">Quantity Type</string>
+    <string name="converted">Converted Value</string>
+    <string name="convert">Convert</string>
+    <string name="enter_the_value">Enter the value</string>
+    <string name="to_unit">To Unit</string>
+    <string name="from_unit">From Unit</string>
+
+</resources>
