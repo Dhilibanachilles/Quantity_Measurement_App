@@ -6,18 +6,15 @@ public class VolumeType {
         double a = 0.001;
         double b = 1000;
 
-        if(fromUnit.equals(toUnit)){
+        if(fromUnit.equals(toUnit)) {
             result = String.format("%f",inputValue);
-        }
-        else if(fromUnit.equals("Milliliter") && toUnit.equals("Liter")){
+        } else if(fromUnit.equals("Milliliter") && toUnit.equals("Liter")) {
             double calculation = inputValue * a;
             result = String.format("%f",calculation);
-        }
-        else if(fromUnit.equals("Liter") && toUnit.equals("Milliliter")){
+        } else if(fromUnit.equals("Liter") && toUnit.equals("Milliliter")) {
             double calculation = inputValue * b;
             result = String.format("%f",calculation);
-        }
-        else{
+        } else{
         }
         return result;
     }
