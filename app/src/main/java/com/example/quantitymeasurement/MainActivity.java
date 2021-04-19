@@ -107,6 +107,7 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(v -> {
 
             if(input.getText().toString().isEmpty()) {
+                Toast.makeText(MainActivity.this,"Please Enter a Value", Toast.LENGTH_SHORT).show();
                 return;
             }
             int inputValue = Integer.parseInt(input.getText().toString());
