@@ -1,27 +1,23 @@
 package com.example.quantitymeasurement;
 
+import java.text.DecimalFormat;
+
 public class Converter {
-    public String result = "";
+    public double result;
+    UnitClass unit;
     public String calculateOutput(int inputValue, String selectedType, String fromUnit, String toUnit) {
 
         switch(selectedType) {
-            case "Weight":
-                WeightType weight = new WeightType();
-                result = weight.calculate(inputValue, fromUnit, toUnit);
-                break;
-            case "Length":
-                LengthType length = new LengthType();
-                result = length.calculate(inputValue, fromUnit, toUnit);
-                break;
-            case "Volume":
-                VolumeType volume = new VolumeType();
-                result = volume.calculate(inputValue, fromUnit, toUnit);
-                break;
             case "Temperature":
                 TemperatureType temperature = new TemperatureType();
-                result = temperature.calculate(inputValue, fromUnit, toUnit);
+                result = Double.parseDouble(temperature.calculate(inputValue, fromUnit, toUnit));
                 break;
+            default:
+                UnitClass fromType = unit.valueOf(fromUnit);
+                UnitClass toType = unit.valueOf(toUnit);
+                result = fromType.convertToBase(inputValue);
+                result = toType.convertToAnother(result);
         }
-        return result;
+        return String.valueOf(new DecimalFormat("0.0000").format(result));
     }
 }
